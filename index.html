@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<link href="jquery-ui.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+	<script src="external/jquery/jquery.js"></script>
+	<script src="jquery-ui.min.js"></script>
+	<script>
+		$( function() {
+			$( "input" ).checkboxradio();
+		} );
+	</script>
+	<script>
+	$( "#slider" ).slider({
+		range: true,
+		values: [ 17, 67 ]
+	});
+	</script>
+	<script src="./script.js"></script>
+</head>
+<body>
+  <fieldset>
+    <legend>Select: </legend>
+    <label for="radio-1">color</label>
+    <input type="radio" name="radio-1" id="radio-1" checked="checked">
+    <label for="radio-2">backgroundColor</label>
+    <input type="radio" name="radio-1" id="radio-2">
+  </fieldset>
+
+	<div class="ui-widget-content" style="border:0;">
+
+		<div id="red"></div>
+		<div id="green"></div>
+		<div id="blue"></div>
+		 
+		<div id="swatch-background" class="ui-widget-content ui-corner-all">
+			<span id="swatch-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quo.</span>
+		</div>
+
+	</div>
+
+
+</body>
+</html>
